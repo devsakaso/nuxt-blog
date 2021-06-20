@@ -76,9 +76,9 @@ export default {
     mode: 'out-in'
   },
   // Expressの文
-  serverMiddleware: [
-    bodyParser.json(),
-    '~/api'
-  ]
+  // serverMiddleware: [
+  //   bodyParser.json(),
+  //   '~/api'
+  // ]
 
 }
