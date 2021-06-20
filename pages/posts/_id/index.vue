@@ -7,11 +7,10 @@
         <div class="post-detail">投稿日：{{ loadedPost.updatedDate | date }}</div>
         <div class="post-detail">Written by {{ loadedPost.author }}</div>
       </div>
-      <p>コンテンツ</p>
+      <p>記事のコンテンツ</p>
     </section>
     <section class="post-feedback">
       <p class="post-content">{{ loadedPost.content }}
-        <a href="mailto:feedback@my-awesome-domain.com">feedback@my-awesome-domain.com</a>
       </p>
     </section>
   </div>
@@ -81,6 +80,10 @@ export default {
 .post-feedback a {
   color: red;
   text-decoration: none;
+}
+.post-content {
+  max-width: 350px;
+  margin: 0 auto;
 }
 
 .post-feedback a:hover,

@@ -1,7 +1,7 @@
 <template>
   <div class="home-page">
     <section class="intro">
-      <h1>トップメッセージ</h1>
+      <!-- <h1>トップメッセージ</h1> -->
     </section>
     <!-- 投稿リスト -->
     <PostList :posts="loadedPosts" />

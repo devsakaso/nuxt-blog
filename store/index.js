@@ -80,8 +80,8 @@ const createStore = () => {
           Cookie.set('expirationDate', new Date().getTime() + Number.parseInt(result.data.expiresIn) * 1000)
 
 
-          // ここから不要- Expressの文
-          return axios.post('http://localhost:3000/api/track-data', {data: '認証！'})
+          // ここ不要- Expressの文
+          // return axios.post('http://localhost:3000/api/track-data', {data: '認証！'})
 
         })
         .catch(e => console.log(e))
